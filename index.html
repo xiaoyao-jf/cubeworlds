@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Cube Worlds online - An exciting 3D cube-based adventure game where you explore and build in a vibrant world of cubes. Free to play, no download required!">
+    <meta name="keywords" content="cube worlds, cube-worlds, online game, 3D game, cube game, browser game, free game">
+    <title>Cube Worlds - Play Free Online 3D Cube Adventure Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Cube Worlds - Play Free Online 3D Cube Adventure Game">
+    <meta property="og:description" content="Explore and build in a vibrant world of cubes. Play Cube Worlds online for free - no download required!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cubeworlds.site">
+    <link rel="canonical" href="https://cubeworlds.site">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        .cube-bg {
+            background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" fill="none"/><rect x="2" y="2" width="16" height="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></svg>');
+            background-size: 20px 20px;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #00ff87, #60efff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .scroll-mt-24 {
+            scroll-margin-top: 6rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-white">
+    <div class="cube-bg min-h-screen">
+        <div class="container mx-auto px-4 py-8">
+            <!-- Header Section -->
+            <header class="text-center mb-12">
+                <div class="inline-block mb-4 floating">
+                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_3vbOcw.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 gradient-text">Cube Worlds</h1>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    Embark on an epic adventure in a world made entirely of cubes. Build, explore, and survive in this immersive 3D sandbox game!
+                </p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="#game-container" class="bg-gradient-to-r from-[#00ff87] to-[#60efff] text-black px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity inline-flex items-center">
+                        <i class="fas fa-play mr-2"></i>Play Now
+                    </a>
+                    <a href="#how-to-play" class="border border-[#00ff87] text-[#00ff87] px-8 py-3 rounded-full font-semibold hover:bg-[#00ff87] hover:text-black transition-colors inline-flex items-center">
+                        <i class="fas fa-book mr-2"></i>How to Play
+                    </a>
+                </div>
+            </header>
+
+            <!-- Game Container -->
+            <div id="game-container" class="max-w-4xl mx-auto bg-black/30 backdrop-blur-sm rounded-xl shadow-2xl overflow-hidden mb-12 hover-scale scroll-mt-24">
+                <div class="p-1 bg-gradient-to-r from-[#00ff87] to-[#60efff]">
+                    <div class="bg-black/90 p-4">
+                        <iframe 
+                            src="https://cloud.onlinegames.io/games/2025/html/cube-worlds/index-og.html"
+                            class="w-full h-[600px] rounded-lg"
+                            frameborder="0"
+                            allowfullscreen
+                            loading="lazy"
+                            title="Play Cube Worlds Online">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Screenshots -->
+            <div class="max-w-4xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold mb-6 gradient-text text-center">Game Screenshots</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-black/30 backdrop-blur-sm rounded-xl overflow-hidden hover-scale">
+                        <img src="https://via.placeholder.com/400x225/1a1a2e/00ff87?text=Cube+Worlds+Gameplay" alt="Cube Worlds Gameplay" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-2">Creative Building</h3>
+                            <p class="text-gray-400 text-sm">Build amazing structures in creative mode</p>
+                        </div>
+                    </div>
+                    <div class="bg-black/30 backdrop-blur-sm rounded-xl overflow-hidden hover-scale">
+                        <img src="https://via.placeholder.com/400x225/1a1a2e/60efff?text=Explore+Worlds" alt="Explore Worlds" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-2">World Exploration</h3>
+                            <p class="text-gray-400 text-sm">Discover hidden treasures and secrets</p>
+                        </div>
+                    </div>
+                    <div class="bg-black/30 backdrop-blur-sm rounded-xl overflow-hidden hover-scale">
+                        <img src="https://via.placeholder.com/400x225/1a1a2e/00ff87?text=Multiplayer+Fun" alt="Multiplayer Fun" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold mb-2">Multiplayer Mode</h3>
+                            <p class="text-gray-400 text-sm">Play with friends in multiplayer mode</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Description -->
+            <div class="max-w-4xl mx-auto bg-black/30 backdrop-blur-sm rounded-xl shadow-2xl p-8 mb-12 hover-scale">
+                <h2 class="text-3xl font-bold mb-6 gradient-text">About Cube Worlds</h2>
+                <div class="prose prose-lg text-gray-300">
+                    <p class="mb-6 leading-relaxed">
+                        Cube Worlds is an exciting 3D sandbox game that puts you in control of a world made entirely of cubes. 
+                        Whether you're a creative builder or an adventurous explorer, this game offers endless possibilities for fun and creativity.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-white mt-8 mb-4">Key Features:</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-black/20 p-4 rounded-lg hover:bg-black/30 transition-colors">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-gradient-to-r from-[#00ff87] to-[#60efff] rounded-lg mr-3"></div>
+                                <span class="font-semibold">Immersive 3D World</span>
+                            </div>
+                            <p class="text-gray-400">Explore a vast world made entirely of cubes</p>
+                        </div>
+                        <div class="bg-black/20 p-4 rounded-lg hover:bg-black/30 transition-colors">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-gradient-to-r from-[#00ff87] to-[#60efff] rounded-lg mr-3"></div>
+                                <span class="font-semibold">Creative Building</span>
+                            </div>
+                            <p class="text-gray-400">Build and create your own structures</p>
+                        </div>
+                        <div class="bg-black/20 p-4 rounded-lg hover:bg-black/30 transition-colors">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-gradient-to-r from-[#00ff87] to-[#60efff] rounded-lg mr-3"></div>
+                                <span class="font-semibold">Instant Play</span>
+                            </div>
+                            <p class="text-gray-400">No download required - play in your browser</p>
+                        </div>
+                        <div class="bg-black/20 p-4 rounded-lg hover:bg-black/30 transition-colors">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-gradient-to-r from-[#00ff87] to-[#60efff] rounded-lg mr-3"></div>
+                                <span class="font-semibold">Free to Play</span>
+                            </div>
+                            <p class="text-gray-400">Enjoy the full game experience for free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Play -->
+            <div id="how-to-play" class="max-w-4xl mx-auto bg-black/30 backdrop-blur-sm rounded-xl shadow-2xl p-8 mb-12 hover-scale scroll-mt-24">
+                <h2 class="text-3xl font-bold mb-6 gradient-text">How to Play</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-white">Controls</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-center">
+                                <i class="fas fa-keyboard w-6 text-[#00ff87]"></i>
+                                <span class="ml-2">WASD - Move</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-mouse w-6 text-[#00ff87]"></i>
+                                <span class="ml-2">Mouse - Look around</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-hand-pointer w-6 text-[#00ff87]"></i>
+                                <span class="ml-2">Left Click - Place block</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-hand-pointer w-6 text-[#00ff87]"></i>
+                                <span class="ml-2">Right Click - Remove block</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/20 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-white">Tips & Tricks</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb w-6 text-[#60efff] mt-1"></i>
+                                <span class="ml-2">Start with simple structures before attempting complex builds</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb w-6 text-[#60efff] mt-1"></i>
+                                <span class="ml-2">Use different block types for variety in your creations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb w-6 text-[#60efff] mt-1"></i>
+                                <span class="ml-2">Explore the world to find rare materials</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Player Reviews -->
+            <div class="max-w-4xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold mb-6 gradient-text text-center">What Players Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-black/30 backdrop-blur-sm rounded-xl p-6 hover-scale">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-[#00ff87] to-[#60efff] rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-black"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-semibold">Alex K.</h4>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"Amazing game! The building mechanics are intuitive and the world is beautiful."</p>
+                    </div>
+                    <div class="bg-black/30 backdrop-blur-sm rounded-xl p-6 hover-scale">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-[#00ff87] to-[#60efff] rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-black"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-semibold">Sarah M.</h4>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"Perfect for creative minds. I love building my own world!"</p>
+                    </div>
+                    <div class="bg-black/30 backdrop-blur-sm rounded-xl p-6 hover-scale">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-[#00ff87] to-[#60efff] rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-black"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-semibold">Mike R.</h4>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300">"The multiplayer mode is fantastic. Great way to play with friends!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="text-center text-gray-400 mt-12 pb-8">
+                <div class="flex justify-center space-x-6 mb-4">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Contact Us</a>
+                </div>
+                <div class="flex justify-center space-x-4 mb-4">
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>&copy; 2024 Cube Worlds. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html> 
